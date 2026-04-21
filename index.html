@@ -3,69 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Lara-Christin Hannicke</title>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --bg: #f9fafb;
+      --white: #ffffff;
     }
 
-    h1 { margin-bottom: 0.2em; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px 40px;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.2em;
+      font-size: 2.3rem;
+    }
 
     .subtitle {
-      color: #666;
+      color: var(--muted);
       margin-top: 0;
+      font-size: 1.1rem;
     }
 
     .card {
-      margin-top: 2rem;
-      padding: 1rem 1.25rem;
-      border: 1px solid #ddd;
-      border-radius: 10px;
+      margin-top: 1.5rem;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
     }
 
     a {
-      color: #0b57d0;
+      color: var(--accent);
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Lara-Christin Hannicke</h1>
-  <p class="subtitle">Student | Scientist</p>
+  <header>
+    <h1>Lara-Christin Hannicke</h1>
+    <p class="subtitle">Graduate Student | Scientist</p>
+  </header>
 
-  <div class="card">
+  <section class="card">
     <h2>About Me</h2>
     <p>
-      Welcome to my personal website. This is where I share my work,
-      publications, and projects. I am a garduate student at Technical University 
-      Munich and a visiting student at the University of California, Davis.
+      Welcome to my personal website. Here I share my academic work, research interests,
+      publications, and projects. I am a graduate student at the Technical University of Munich
+      and a visiting student at the University of California, Davis.
     </p>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>Projects</h2>
+  <section class="card">
+    <h2>Research & Projects</h2>
     <p>
-      I am currently supporting the Global Environmental Chnage Lab at UC Davis in the analysis of 
-      climate simulations (GDSTEM) 
+      I am currently supporting the Global Environmental Change Lab at UC Davis in the analysis
+      of climate simulations using GDSTEM.
     </p>
-  </div>
+  </section>
 
-  <div class="card">
+  <section class="card">
     <h2>Contact</h2>
-    <p>Email: lchannicke@ucdavis.edu or lara.hannicke@tum.de</p>
-    <p>LinkedIn: https://de.linkedin.com/in/lara-hannicke/en</p>
+    <p>
+      Email:
+      <a href="mailto:lchannicke@ucdavis.edu">lchannicke@ucdavis.edu</a> |
+      <a href="mailto:lara.hannicke@tum.de">lara.hannicke@tum.de</a>
+    </p>
+    <p>
+      LinkedIn:
+      <a href="https://de.linkedin.com/in/lara-hannicke/en" target="_blank" rel="noopener noreferrer">
+        lara-hannicke
+      </a>
+    </p>
+  </section>
 
-  </div>
+  <footer>
+    © 2026 Lara-Christin Hannicke
+  </footer>
 </body>
 </html>
