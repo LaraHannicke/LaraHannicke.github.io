@@ -11,18 +11,23 @@
       --muted: #6b7280;
       --border: #e5e7eb;
       --accent: #2563eb;
-      --bg: #f9fafb;
+      --bg-top: #f9fafb;
+      --bg-bottom: #eef2f7;
       --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       font-family: Arial, sans-serif;
-      max-width: 850px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px 40px;
       line-height: 1.7;
       color: var(--text);
-      background-color: var(--bg);
+      background: linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
     }
 
     header {
@@ -31,27 +36,44 @@
 
     h1 {
       margin-bottom: 0.2em;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
+      letter-spacing: -0.5px;
     }
 
     .subtitle {
       color: var(--muted);
       margin-top: 0;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
     }
 
     .card {
       margin-top: 1.5rem;
-      padding: 1.25rem 1.5rem;
+      padding: 1.4rem 1.6rem;
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       background: var(--white);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
     h2 {
       margin-top: 0;
+      margin-bottom: 0.9rem;
       color: var(--accent);
+      font-size: 1.9rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
     }
 
     a {
@@ -63,15 +85,30 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 1.2rem;
-    }
-
     footer {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       font-size: 0.95rem;
       color: var(--muted);
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 20px auto;
+        padding: 0 14px 30px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
     }
   </style>
 </head>
@@ -79,23 +116,64 @@
 <body>
   <header>
     <h1>Lara-Christin Hannicke</h1>
-    <p class="subtitle">Graduate Student | Scientist</p>
+    <p class="subtitle">Graduate Student | Environmental Data Analysis | Geospatial Research</p>
   </header>
 
   <section class="card">
     <h2>About Me</h2>
     <p>
-      Welcome to my personal website. Here I share my academic work, research interests,
-      publications, and projects. I am a graduate student at the Technical University of Munich
-      and a visiting student at the University of California, Davis.
+      Welcome to my personal website. I am a graduate student in Sustainable Resource Management
+      at the Technical University of Munich and a visiting student at the University of California, Davis.
+      My academic background is in Geography, which I studied at Freie Universität Berlin.
+    </p>
+    <p>
+      My work focuses on environmental data analysis, climate-related research, and the use of
+      computational and geospatial methods to better understand environmental change.
     </p>
   </section>
 
   <section class="card">
-    <h2>Research & Projects</h2>
+    <h2>Background</h2>
+    <p>
+      I studied Geography at Freie Universität Berlin and am currently pursuing a Master’s degree
+      in Sustainable Resource Management at the Technical University of Munich.
+    </p>
+    <p>
+      Through my studies and research, I have developed a strong interest in environmental systems,
+      sustainability challenges, and interdisciplinary approaches that combine scientific data analysis
+      with geospatial methods.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Environmental data analysis</li>
+      <li>Climate and ecosystem research</li>
+      <li>Remote sensing and geospatial analysis</li>
+      <li>Sustainability and resource management</li>
+      <li>Data-driven approaches to environmental change</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Methods &amp; Tools</h2>
+    <ul>
+      <li>Programming: R, Python</li>
+      <li>Geospatial tools: ArcGIS, QGIS, eCognition</li>
+      <li>Methods: remote sensing, GIS, geoinformation, environmental data analysis</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Research &amp; Projects</h2>
     <p>
       I am currently supporting the Global Environmental Change Lab at UC Davis in the analysis
       of climate simulations using GDSTEM.
+    </p>
+    <p>
+      My broader interests include environmental modeling, geospatial analysis, and data-driven
+      approaches to sustainability research.
     </p>
   </section>
 
@@ -110,6 +188,12 @@
       LinkedIn:
       <a href="https://de.linkedin.com/in/lara-hannicke/en" target="_blank" rel="noopener noreferrer">
         lara-hannicke
+      </a>
+    </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/LaraHannicke" target="_blank" rel="noopener noreferrer">
+        github.com/LaraHannicke
       </a>
     </p>
   </section>
